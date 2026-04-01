@@ -50,6 +50,18 @@ child-celestra/
 └── theme.json          # Global styles and settings
 ```
 
+## 🚀 Installation
+
+1. **Clone the repository** into your WordPress themes directory:
+   ```bash
+   cd /path/to/your/wordpress/wp-content/themes/
+   git clone https://github.com/chrisgomelan/project-celestra.git child-celestra
+   ```
+
+2. **Verify Parent Theme:** Ensure that the [Twenty Twenty-Five](https://wordpress.org/themes/twentytwentyfive/) theme is installed in your WordPress environment, as Celestra is a child theme.
+
+3. **Activate Theme:** Log in to your WordPress admin dashboard, navigate to **Appearance > Themes**, and activate the **Celestra Child Theme**.
+
 ## 🛠️ Development
 
 ### Prerequisites
