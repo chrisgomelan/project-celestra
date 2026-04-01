@@ -1,0 +1,127 @@
+/* =========================================
+   celestra/distinction-section Block Styles
+   ========================================= */
+
+.celestra-distinction {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.celestra-distinction__inner {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1220px;
+    box-sizing: border-box;
+}
+
+/* ──────────────────────────────────────────
+   Header Area
+   ────────────────────────────────────────── */
+.celestra-distinction__header {
+    margin-bottom: 60px;
+}
+
+.celestra-distinction__heading {
+    margin: 0;
+    /* Uses H2 from theme.json (Libre Baskerville, 32px) */
+}
+
+/* ──────────────────────────────────────────
+   Cards Grid
+   ────────────────────────────────────────── */
+.celestra-distinction__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+}
+
+.celestra-distinction__card {
+    width: 228.8px;
+    height: 347px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.celestra-distinction__image-wrapper {
+    width: 228.8px;
+    height: 208px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.celestra-distinction__image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.celestra-distinction__content {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.celestra-distinction__card-title {
+    margin: 0;
+    font-family: var(--wp--preset--font-family--libre-baskerville) !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    color: #323732;
+}
+
+.celestra-distinction__card-description {
+    margin: 0;
+    /* Uses H6 from theme.json (Source Sans 3, 15px) */
+    line-height: 1.4;
+    color: #323732;
+    text-transform: none !important;
+    text-align: start;
+}
+
+/* ──────────────────────────────────────────
+   Footer Area (Button)
+   ────────────────────────────────────────── */
+.celestra-distinction__footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 1024px) {
+    .celestra-distinction__grid {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 781px) {
+    .celestra-distinction {
+        padding: 60px 0;
+    }
+
+    .celestra-distinction__grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .celestra-distinction__card {
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+    }
+
+    .celestra-distinction__image-wrapper {
+        width: 100%;
+        height: 208px;
+    }
+}

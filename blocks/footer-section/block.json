@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/footer-section",
+    "version": "1.0.0",
+    "title": "Celestra Footer",
+    "category": "theme",
+    "icon": "footer",
+    "description": "Custom footer section with links, logo, socials and legal info.",
+    "keywords": [
+        "footer",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "logoUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/celestra-logo-footer.png"
+        },
+        "backgroundUrl": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ]
+    },
+    "style": "file:../../assets/css/footer.css",
+    "render": "file:./render.php"
+}

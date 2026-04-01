@@ -1,0 +1,75 @@
+<!-- wp:group {"tagName":"header","align":"full","style":{"position":{"type":"sticky","top":"0px"},"spacing":{"padding":{"bottom":"0px"}},"elements":{"link":{"color":{"text":"var:preset|color|celestra-slate"}}}},"backgroundColor":"white","layout":{"type":"constrained"},"className":"is-position-sticky"} -->
+<header class="wp-block-group alignfull has-white-background-color has-background is-position-sticky">
+
+    <!-- Row 1 Wrapper (Full Width) -->
+    <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"20px","bottom":"20px"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group alignfull" style="padding-top:20px;padding-bottom:20px">
+
+        <!-- Row 1 Inner (Wide/Centered) -->
+        <!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"left":"20px","right":"20px"}}},"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+        <div class="wp-block-group alignwide" style="padding-right:20px;padding-left:20px">
+
+            <!-- Logo -->
+            <!-- wp:image {"width":146,"height":40,"sizeSlug":"full","linkDestination":"home"} -->
+            <figure class="wp-block-image size-full is-resized"><a href="/" title="Celestra - Home"><img
+                        src="/wp-content/uploads/2026/03/celestra-logo.webp" alt="Celestra Logo" title="Celestra Logo"
+                        width="146" height="40" /></a></figure>
+            <!-- /wp:image -->
+
+            <!-- Utility Links and Button -->
+            <!-- wp:group {"className":"celestra-top-links","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right","verticalAlignment":"center"},"style":{"spacing":{"blockGap":"20px"}}} -->
+            <div class="wp-block-group celestra-top-links">
+                <!-- wp:navigation {"className":"celestra-utility-nav","overlayMenu":"never","layout":{"type":"flex","justifyContent":"right"},"style":{"typography":{"fontFamily":"var:preset|font-family|source-sans-3","fontSize":"15px"},"spacing":{"margin":{"right":"0px"},"blockGap":"0px"}},"textColor":"celestra-slate"} -->
+                <!-- wp:navigation-link {"label":"Sign In","url":"/signin","title":"Sign In to your account"} /-->
+                <!-- wp:navigation-link {"label":"Find Reservations","url":"/reservations","title":"Find your reservations"} /-->
+                <!-- /wp:navigation -->
+
+                <!-- wp:buttons -->
+                <div class="wp-block-buttons">
+                    <!-- wp:button {"className":"is-style-outline","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"typography":{"fontFamily":"var:preset|font-family|source-sans-3","fontSize":"15px"},"border":{"radius":"0px"}},"textColor":"celestra-slate"} -->
+                    <div class="wp-block-button is-style-outline"><a href="#" title="Join Now"
+                            class="wp-block-button__link has-celestra-slate-color has-text-color wp-element-button celestra-header-join-btn"
+                            style="border-radius:0px;font-size:15px;width:111px;height:30px;display:flex;align-items:center;justify-content:center;padding:0">Join
+                            Now</a></div>
+                    <!-- /wp:button -->
+                </div>
+                <!-- /wp:buttons -->
+            </div>
+            <!-- /wp:group -->
+
+        </div>
+        <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
+
+    <!-- Row 2 Wrapper (Full Width with Border) -->
+    <!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|celestra-slate","width":"1px"}},"spacing":{"padding":{"left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group alignfull"
+        style="border-top:1px solid var(--wp--preset--color--celestra-slate);padding-right:20px;padding-left:20px">
+
+        <!-- Row 2 Inner (Wide/Centered) -->
+        <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"padding":{"top":"15px","bottom":"15px"}}}} -->
+        <div class="wp-block-group alignwide" style="padding-top:15px;padding-bottom:15px">
+            <!-- Main Navigation -->
+            <!-- wp:navigation {"className":"celestra-main-nav","overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"fontFamily":"var:preset|font-family|source-sans-3","fontSize":"15px","textTransform":"uppercase"},"spacing":{"margin":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"blockGap":"0px"}},"textColor":"celestra-slate"} -->
+            <!-- wp:navigation-link {"label":"About","url":"/about"} /-->
+            <!-- wp:navigation-link {"label":"Services","url":"/services"} /-->
+            <!-- wp:navigation-link {"label":"Portfolio","url":"/portfolio"} /-->
+            <!-- wp:navigation-link {"label":"Partners","url":"/partners"} /-->
+            <!-- wp:navigation-link {"label":"Offers","url":"/offers"} /-->
+            <!-- wp:navigation-link {"label":"Contact","url":"/contact","className":"celestra-nav-last"} /-->
+
+            <!-- Mobile Only Links -->
+            <!-- wp:navigation-link {"label":"Sign In","url":"/signin","className":"celestra-mobile-only","title":"Sign In"} /-->
+            <!-- wp:navigation-link {"label":"Find Reservations","url":"/reservations","className":"celestra-mobile-only","title":"Find Reservations"} /-->
+            <!-- wp:navigation-link {"label":"Join Now","url":"#","className":"celestra-mobile-only","title":"Join Now"} /-->
+            <!-- /wp:navigation -->
+        </div>
+        <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
+
+</header>
+<!-- /wp:group -->

@@ -1,0 +1,99 @@
+/* =========================================
+   celestra/privileges-section Block Styles
+   ========================================= */
+
+.celestra-privileges {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.celestra-privileges__inner {
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* ── Header Area ────────────────────────── */
+.celestra-privileges__header {
+    max-width: 1000px;
+    /* Slightly wider to accommodate the 902px description */
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* Uniform gap between all elements */
+}
+
+.celestra-privileges__heading {
+    margin: 0;
+}
+
+.celestra-privileges__description {
+    margin: 0;
+    max-width: 902px;
+    line-height: 1.4;
+    color: #323732;
+}
+
+/* ── Grid Area ──────────────────────────── */
+.celestra-privileges__grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.celestra-privileges__item {
+    flex: 0 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.celestra-privileges__icon {
+    width: 75px;
+    height: 74px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    /* Subtle background to define the circle */
+    border: none;
+    overflow: hidden;
+}
+
+.celestra-privileges__icon img {
+    object-fit: contain;
+    width: 75px;
+    height: 74px;
+}
+
+.celestra-privileges__item-label {
+    margin: 0;
+    /* Uses H5 from theme.json (16px) */
+}
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 1024px) {
+    .celestra-privileges__grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 781px) {
+    .celestra-privileges {
+        padding: 60px 0;
+    }
+
+    .celestra-privileges__grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}

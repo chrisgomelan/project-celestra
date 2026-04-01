@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/privileges-section",
+    "version": "1.0.0",
+    "title": "Celestra Privileges",
+    "category": "theme",
+    "icon": "awards",
+    "description": "Grid of privileges with icons and a call to action.",
+    "keywords": [
+        "privileges",
+        "features",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Experience a World of Privilege and Distinction"
+        },
+        "description": {
+            "type": "string",
+            "default": "Enjoy premium privileges, member-only offers, and a smooth digital experience crafted for modern travelers."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Join Now"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "items": {
+            "type": "array",
+            "default": [
+                {
+                    "icon": "/wp-content/uploads/2026/03/icon-bed.webp",
+                    "label": "Stay More, Earn Nights"
+                },
+                {
+                    "icon": "/wp-content/uploads/2026/03/icon-family.webp",
+                    "label": "Family Privileges"
+                },
+                {
+                    "icon": "/wp-content/uploads/2026/03/icon-crown.webp",
+                    "label": "Exclusive Member Rates"
+                },
+                {
+                    "icon": "/wp-content/uploads/2026/03/icon-luggage.webp",
+                    "label": "Seamless Arrival & Departure"
+                }
+            ]
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

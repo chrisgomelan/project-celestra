@@ -1,0 +1,148 @@
+/* =========================================
+   celestra/differences-section Block Styles
+   ========================================= */
+
+.celestra-differences {
+    padding: 0 0 100px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.celestra-differences__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.celestra-differences__main-title {
+    font-family: var(--wp--preset--font-family--libre-baskerville), serif !important;
+    font-size: 36px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+    margin-bottom: 80px !important;
+    text-align: center !important;
+    width: 100%;
+}
+
+.celestra-differences__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    margin-bottom: 80px;
+}
+
+/* Staggered layout logic: 
+   Row 1 has padding-right to shift left.
+   Row 2 has padding-left to shift right.
+*/
+.celestra-differences__row--1 {
+    padding-right: 290px;
+}
+
+.celestra-differences__row--2 {
+    padding-left: 290px;
+    margin-bottom: 0;
+}
+
+.celestra-differences__item {
+    flex: 0 1 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.celestra-differences__icon {
+    margin-bottom: 25px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.celestra-differences__icon img {
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.celestra-differences__title {
+    font-family: var(--wp--preset--font-family--libre-baskerville), serif !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    color: #000000 !important;
+    margin: 0 0 15px 0 !important;
+    line-height: 1.2 !important;
+}
+
+.celestra-differences__desc {
+    font-family: var(--wp--preset--font-family--source-sans-3), sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 100% !important;
+    letter-spacing: 0% !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .celestra-differences__row--1 {
+        padding-right: 150px;
+    }
+
+    .celestra-differences__row--2 {
+        padding-left: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .celestra-differences__main-title {
+        font-size: 28px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .celestra-differences__row {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        margin-bottom: 60px;
+        padding: 0 !important;
+        /* Remove stagger padding on tablet/mobile */
+        justify-content: center;
+    }
+
+    .celestra-differences__row--2 {
+        margin-bottom: 0;
+    }
+
+    .celestra-differences__item {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .celestra-differences__icon img {
+        width: 80px;
+    }
+
+    .celestra-differences__title {
+        font-size: 20px !important;
+    }
+
+    .celestra-differences__desc {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+        /* Better readability for multi-line text on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .celestra-differences {
+        padding-bottom: 60px;
+    }
+
+    .celestra-differences__main-title {
+        font-size: 24px !important;
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/distinction-section",
+    "version": "1.0.0",
+    "title": "Celestra Distinction",
+    "category": "theme",
+    "icon": "grid-view",
+    "description": "Grid of distinction cards with images, titles, and descriptions.",
+    "keywords": [
+        "distinction",
+        "cards",
+        "benefits",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Where Every Moment Reflects Your Distinction"
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Explore Benefits"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "cards": {
+            "type": "array",
+            "default": [
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-lumen.webp",
+                    "title": "LUMEN",
+                    "description": "Unlock exclusive member-only offers when you book directly with Celestra."
+                },
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-aurion.webp",
+                    "title": "AURION",
+                    "description": "Earn 25% more reward points on every stay."
+                },
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-elara.webp",
+                    "title": "ELARA",
+                    "description": "Earn 50% more reward points every time you stay."
+                },
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-zenith.webp",
+                    "title": "ZENITH",
+                    "description": "Earn 50% more reward points with every booking."
+                }
+            ]
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

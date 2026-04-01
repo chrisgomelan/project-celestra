@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/about-section-hero",
+    "version": "1.0.0",
+    "title": "About Section Hero",
+    "category": "theme",
+    "icon": "cover-image",
+    "description": "Full-width About Hero with an image background and centered content.",
+    "keywords": [
+        "hero",
+        "about",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Stay Smarter. Travel Better."
+        },
+        "description": {
+            "type": "string",
+            "default": "Celestra is a seamless hotel reservation platform designed to help travelers discover, compare, and book the perfect stay — effortlessly and confidently.\n\nWhether you're planning a business trip, weekend escape, or dream vacation, Celestra makes finding the right hotel simple, transparent, and secure."
+        },
+        "primaryButtonText": {
+            "type": "string",
+            "default": "Find Your Stay"
+        },
+        "primaryButtonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "secondaryButtonText": {
+            "type": "string",
+            "default": "Start Exploring"
+        },
+        "secondaryButtonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/luxury-hotel-reception-hall-lounge-restaurant-with-high-ceiling-scaled.webp"
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": "Luxury Hotel Reception Lounge Background"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": false,
+            "padding": false
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/stats-counter",
+    "version": "1.0.0",
+    "title": "Stats Counter Bar",
+    "category": "theme",
+    "icon": "performance",
+    "description": "A bar displaying four key statistics with numbers and labels.",
+    "keywords": [
+        "stats",
+        "counter",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "number1": {
+            "type": "string",
+            "default": "150+"
+        },
+        "label1": {
+            "type": "string",
+            "default": "Verified Hotel Partners"
+        },
+        "number2": {
+            "type": "string",
+            "default": "30+"
+        },
+        "label2": {
+            "type": "string",
+            "default": "Cities Worldwide"
+        },
+        "number3": {
+            "type": "string",
+            "default": "25+"
+        },
+        "label3": {
+            "type": "string",
+            "default": "Destinations Covered"
+        },
+        "number4": {
+            "type": "string",
+            "default": "24/7"
+        },
+        "label4": {
+            "type": "string",
+            "default": "Booking Support"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "wide",
+            "full"
+        ]
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

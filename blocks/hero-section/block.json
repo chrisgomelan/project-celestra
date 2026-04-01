@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/hero-section",
+    "version": "1.0.0",
+    "title": "Celestra Hero",
+    "category": "theme",
+    "icon": "cover-image",
+    "description": "Full-width hero with background image and text overlay.",
+    "keywords": [
+        "hero",
+        "banner",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Where Every Moment Feels Effortless"
+        },
+        "description": {
+            "type": "string",
+            "default": "Experience comfort, elegance, and warmth in every moment."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Learn More"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/celestra-home-bg.webp"
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": "Business team in a modern office"
+        },
+        "backgroundColor": {
+            "type": "string",
+            "default": "#8B9CB8"
+        },
+        "showButton": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": false,
+            "padding": false
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

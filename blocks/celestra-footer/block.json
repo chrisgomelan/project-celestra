@@ -1,0 +1,127 @@
+{
+    "apiVersion": 3,
+    "name": "zentra/footer",
+    "title": "Zentra Footer",
+    "category": "theme",
+    "description": "Reusable Zentra footer block with fully customizable columns and link lists.",
+    "attributes": {
+        "logo_url": {
+            "type": "string",
+            "default": "/wp-content/themes/child-zentra/assets/images/logo.webp"
+        },
+        "tagline": {
+            "type": "string",
+            "default": "Secure Banking for a Digital World"
+        },
+        "col1_title": {
+            "type": "string",
+            "default": "Product"
+        },
+        "col1_links": {
+            "type": "array",
+            "default": [
+                {
+                    "label": "Features",
+                    "url": "#"
+                },
+                {
+                    "label": "Pricing",
+                    "url": "#"
+                },
+                {
+                    "label": "Updates",
+                    "url": "#"
+                },
+                {
+                    "label": "Security",
+                    "url": "#"
+                }
+            ]
+        },
+        "col2_title": {
+            "type": "string",
+            "default": "Company"
+        },
+        "col2_links": {
+            "type": "array",
+            "default": [
+                {
+                    "label": "About Us",
+                    "url": "#"
+                },
+                {
+                    "label": "Careers",
+                    "url": "#"
+                },
+                {
+                    "label": "Press",
+                    "url": "#"
+                },
+                {
+                    "label": "Partners",
+                    "url": "#"
+                }
+            ]
+        },
+        "col3_title": {
+            "type": "string",
+            "default": "Resources"
+        },
+        "col3_links": {
+            "type": "array",
+            "default": [
+                {
+                    "label": "Help Center",
+                    "url": "#"
+                },
+                {
+                    "label": "FAQs",
+                    "url": "#"
+                },
+                {
+                    "label": "Developer API",
+                    "url": "#"
+                },
+                {
+                    "label": "Community",
+                    "url": "#"
+                }
+            ]
+        },
+        "col4_title": {
+            "type": "string",
+            "default": "Legal"
+        },
+        "col4_links": {
+            "type": "array",
+            "default": [
+                {
+                    "label": "Terms & Conditions",
+                    "url": "#"
+                },
+                {
+                    "label": "Privacy Policy",
+                    "url": "#"
+                },
+                {
+                    "label": "Compliance",
+                    "url": "#"
+                },
+                {
+                    "label": "Licenses",
+                    "url": "#"
+                }
+            ]
+        },
+        "social_title": {
+            "type": "string",
+            "default": "Follow Us on Social"
+        },
+        "copyright_text": {
+            "type": "string",
+            "default": "Copyright © 2026 Zentra | Regulatory Disclosures"
+        }
+    },
+    "style": "file:../../assets/css/footer.css",
+    "render": "file:./render.php"
+}

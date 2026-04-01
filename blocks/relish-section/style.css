@@ -1,0 +1,88 @@
+/* =========================================
+   celestra/relish-section Block Styles
+   ========================================= */
+
+.celestra-relish {
+    width: 100%;
+    min-height: 486px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 60px 0;
+}
+
+.celestra-relish__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    /* Align content box to the right */
+}
+
+.celestra-relish__content-box {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 591px;
+    min-height: 346px;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.celestra-relish__heading {
+    margin: 0;
+    /* Uses H2 from theme.json (Libre Baskerville, 32px) */
+    color: #323732;
+    line-height: 1.2;
+}
+
+.celestra-relish__description {
+    margin: 0;
+    /* Uses H6 from theme.json (Source Sans 3, 15px) */
+    color: #323732;
+    line-height: 1.6;
+    max-width: 385px;
+}
+
+.celestra-relish__button-wrapper {
+    margin-top: 10px;
+}
+
+/* Ensure the secondary button inside matches theme styles */
+.celestra-relish__button-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
+    font-family: var(--wp--preset--font-family--source-sans-3) !important;
+    font-weight: 400 !important;
+    font-size: clamp(18px, 2.5vw, 20px) !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+}
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 1024px) {
+    .celestra-relish__inner {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 781px) {
+    .celestra-relish {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .celestra-relish__content-box {
+        padding: 40px 30px;
+        max-width: 100%;
+    }
+}

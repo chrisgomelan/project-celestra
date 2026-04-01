@@ -1,0 +1,238 @@
+.celestra-coming-soon {
+    position: relative !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px !important;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box !important;
+    overflow: hidden;
+    margin: 70px 0 !important;
+}
+
+.celestra-coming-soon__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay to make text readable */
+    z-index: 1;
+}
+
+.celestra-coming-soon__content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0 !important;
+}
+
+.celestra-coming-soon__title {
+    font-family: var(--wp--preset--font-family--libre-baskerville), 'Libre Baskerville', serif;
+    font-size: clamp(24px, 6vw, 48px);
+    color: #FFFFFF;
+    line-height: 1.2 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 !important;
+}
+
+
+.celestra-coming-soon__description-container {
+    max-width: 666px;
+    margin: 0 auto 50px;
+}
+
+.celestra-coming-soon__description {
+    font-family: var(--wp--preset--font-family--source-sans-3), 'Source Sans 3', sans-serif;
+    color: #FFFFFF;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.celestra-coming-soon__timer {
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.sl-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .sl-flex-container {
+        gap: 25px;
+    }
+}
+
+.sl-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sl-unit span,
+.sl-sep {
+    font-family: var(--wp--preset--font-family--libre-baskerville), 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: clamp(24px, 6vw, 96px) !important;
+    line-height: 1;
+    color: #FFFFFF;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+
+    .sl-unit span,
+    .sl-sep {
+        font-size: 72px !important;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .sl-unit span,
+    .sl-sep {
+        font-size: 96px !important;
+    }
+}
+
+.sl-unit p {
+    font-family: var(--wp--preset--font-family--lora), 'Lora', serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 10px 0 0;
+    line-height: 1;
+    color: #FFFFFF;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 480px) {
+    .sl-unit p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sl-unit p {
+        font-size: 24px;
+    }
+}
+
+.sl-sep {
+    align-self: flex-start;
+    margin-top: 5px;
+}
+
+.celestra-coming-soon__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.celestra-coming-soon__subscribe-title {
+    font-family: var(--wp--preset--font-family--libre-baskerville), 'Libre Baskerville', serif;
+    font-weight: 500;
+    font-size: clamp(16px, 6vw, 24px);
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    line-height: 1;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.celestra-coming-soon__form {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 480px) {
+    .celestra-coming-soon__form {
+        flex-direction: row;
+    }
+}
+
+.celestra-coming-soon__input {
+    flex: 1;
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    font-family: var(--wp--preset--font-family--inter), 'Inter', sans-serif;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    color: #333;
+}
+
+
+.celestra-coming-soon__button-container {
+    display: flex;
+}
+
+.celestra-coming-soon__button {
+    padding: 18px 40px;
+    cursor: pointer;
+    font-family: var(--wp--preset--font-family--source-sans-3), 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+@media (min-width: 480px) {
+    .celestra-coming-soon__button {
+        width: auto;
+    }
+}
+
+/* Hover effect is now handled by .is-style-fill in global style.css */
+
+.celestra-coming-soon__socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.celestra-coming-soon__socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #FFFFFF;
+    color: var(--wp--preset--color--celestra-slate, #323732);
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.celestra-coming-soon__socials a:hover {
+    transform: translateY(-3px);
+    background-color: var(--wp--preset--color--celestra-gold, #C6A05D);
+    color: #FFFFFF;
+}

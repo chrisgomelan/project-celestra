@@ -1,0 +1,133 @@
+/* =========================================
+   celestra/content-split Block Styles
+   ========================================= */
+
+.celestra-split-section {
+    padding: 100px 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.celestra-split-section__inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 40px;
+}
+
+/* Default: Image Left, Content Right */
+.celestra-split-section.is-normal .celestra-split-section__inner {
+    flex-direction: row;
+}
+
+.celestra-split-section.is-reversed .celestra-split-section__inner {
+    flex-direction: row-reverse;
+}
+
+/* Image styles */
+.celestra-split-section__image img {
+    width: 438px;
+    height: 477px;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* Content Styles */
+.celestra-split-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Title with Golden Bar Background - Bleeds to the left edge of screen */
+.celestra-split-section__title-wrapper {
+    position: relative;
+    background-color: var(--wp--preset--color--celestra-gold, #C6A05D);
+    padding: 15px 120px 15px 0;
+    /* Increased right padding */
+    margin: 0 !important;
+    margin-left: -100vw !important;
+    padding-left: 100vw !important;
+    width: fit-content;
+    white-space: nowrap;
+    /* Prevent shrinking/wrapping of the title */
+    z-index: 0;
+    /* Matches background/behind image if needed */
+}
+
+.celestra-split-section__title {
+    font-family: var(--wp--preset--font-family--libre-baskerville), serif;
+    font-size: clamp(24px, 3vw, 32px);
+    color: #000000 !important;
+    margin: 0 !important;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+/* Subheading Typography */
+.celestra-split-section__subheading {
+    font-family: var(--wp--preset--font-family--source-sans-3), sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.0;
+    letter-spacing: 0%;
+    color: #000000 !important;
+    margin: 0 !important;
+    text-transform: none;
+}
+
+/* Description Typography (h4) */
+.celestra-split-section__description {
+    font-family: var(--wp--preset--font-family--source-sans-3), sans-serif;
+    /* Matches standard paragraph but as h4 */
+
+    line-height: 1.6;
+    color: #000000 !important;
+    margin: 0 0 15px 0 !important;
+    text-transform: none;
+}
+
+.celestra-split-section__description-wrapper h4:last-child {
+    margin-bottom: 0 !important;
+}
+
+
+.celestra-split-section__cta .is-style-outline .wp-block-button__link:hover {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .celestra-split-section__inner {
+        flex-direction: column !important;
+        gap: 50px;
+    }
+
+    .celestra-split-section__content,
+    .celestra-split-section__image {
+        width: 100%;
+    }
+
+    .celestra-split-section__image img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .celestra-split-section__title-wrapper {
+        margin-left: -20px !important;
+        padding-left: 20px !important;
+        width: calc(100% + 40px) !important;
+        white-space: normal;
+    }
+}

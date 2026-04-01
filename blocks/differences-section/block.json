@@ -1,0 +1,73 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/differences-section",
+    "version": "1.0.0",
+    "title": "Celestra Differences",
+    "category": "theme",
+    "icon": "feedback",
+    "description": "Explains what makes Celestra different with icons and text.",
+    "attributes": {
+        "mainTitle": {
+            "type": "string",
+            "default": "What Makes Celestra Different"
+        },
+        "item1Icon": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/smarter-search.svg"
+        },
+        "item1Title": {
+            "type": "string",
+            "default": "Smarter Search Technology"
+        },
+        "item1Desc": {
+            "type": "string",
+            "default": "Powerful filters and intelligent recommendations help you find the right hotel faster."
+        },
+        "item2Icon": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/secure-booking.svg"
+        },
+        "item2Title": {
+            "type": "string",
+            "default": "Secure & Reliable Booking"
+        },
+        "item2Desc": {
+            "type": "string",
+            "default": "Encrypted transactions and trusted hotel partnerships ensure peace of mind."
+        },
+        "item3Icon": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/curated-global.svg"
+        },
+        "item3Title": {
+            "type": "string",
+            "default": "Curated Global Listings"
+        },
+        "item3Desc": {
+            "type": "string",
+            "default": "From boutique stays to luxury resorts, we connect you with verified properties worldwide."
+        },
+        "item4Icon": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/transparent-pricing.svg"
+        },
+        "item4Title": {
+            "type": "string",
+            "default": "Transparent Pricing"
+        },
+        "item4Desc": {
+            "type": "string",
+            "default": "No hidden fees. Clear breakdowns. Honest booking."
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "wide",
+            "full"
+        ]
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

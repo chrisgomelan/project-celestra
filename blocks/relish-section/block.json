@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/relish-section",
+    "version": "1.0.0",
+    "title": "Celestra Relish",
+    "category": "theme",
+    "icon": "food",
+    "description": "Full-width section with a background image and a content box.",
+    "keywords": [
+        "relish",
+        "food",
+        "privileges",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Relish Exceptional Privileges"
+        },
+        "description": {
+            "type": "string",
+            "default": "Experience refined gastronomy across distinguished restaurants and bars around the world. Savor every occasion and instantly redeem your points, with 15 points equal to USD 1 off your next dining experience."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Learn More"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/celestra-relish-bg.webp"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

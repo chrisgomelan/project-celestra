@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/content-split",
+    "version": "1.0.0",
+    "title": "Content Split Section",
+    "category": "theme",
+    "icon": "columns",
+    "description": "Two-column split section: Image on left, Text on right.",
+    "keywords": [
+        "split",
+        "section",
+        "celestra",
+        "about"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Our Story – Why Celestra Exists"
+        },
+        "subheading": {
+            "type": "string",
+            "default": "Travel should be exciting — not stressful."
+        },
+        "description": {
+            "type": "string",
+            "default": "Celestra was created to simplify the way people search and book accommodations. We saw travelers overwhelmed by hidden fees, inconsistent listings, and complicated booking processes.\n\nSo we built a smarter solution.\n\nBy combining advanced search technology, transparent pricing, and curated hotel listings, Celestra ensures every traveler books with clarity and confidence."
+        },
+        "buttonText": {
+            "type": "string",
+            "default": "Get in Touch"
+        },
+        "buttonUrl": {
+            "type": "string",
+            "default": "#"
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/professional-women-stylish-suit-office-with-tablet-device-scaled.webp"
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": "Professional Women in Office"
+        },
+        "reverseLayout": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "wide",
+            "full"
+        ]
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

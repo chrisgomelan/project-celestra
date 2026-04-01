@@ -1,0 +1,47 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/coming-soon",
+    "version": "1.0.0",
+    "title": "Coming Soon Section",
+    "category": "theme",
+    "icon": "clock",
+    "description": "Coming soon section with timer, text, subscribe form, and image.",
+    "keywords": [
+        "coming soon",
+        "timer",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Your Next Stay Starts Here"
+        },
+        "description": {
+            "type": "string",
+            "default": "Elegant spaces. Seamless booking. Memorable experiences. We're launching soon be the first to know."
+        },
+        "subTitle": {
+            "type": "string",
+            "default": "Get notified when we launch"
+        },
+        "imageUrl": {
+            "type": "string",
+            "default": "/wp-content/uploads/2026/03/coming-soon-bg-scaled.webp"
+        },
+        "imageAlt": {
+            "type": "string",
+            "default": "Coming Soon Background"
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "wide",
+            "full"
+        ]
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

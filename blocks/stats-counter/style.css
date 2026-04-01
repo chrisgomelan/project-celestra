@@ -1,0 +1,88 @@
+/* =========================================
+   celestra/stats-counter Block Styles
+   ========================================= */
+
+.celestra-stats-bar {
+    width: 100%;
+    margin: 0 0 80px 0 !important;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.celestra-stats-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #323732;
+    /* Darker border color from image */
+    padding: 30px 40px;
+    margin: 0 auto;
+    max-width: 1220px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.celestra-stats-bar__item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.celestra-stats-bar__text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.celestra-stats-bar__number {
+    font-weight: 700 !important;
+    color: #323732;
+    margin: 0 !important;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.celestra-stats-bar__label {
+    font-family: var(--wp--preset--font-family--libre-baskerville), serif !important;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    color: #323732;
+    margin: 0 !important;
+    line-height: 1.2;
+    max-width: 150px;
+}
+
+.celestra-stats-bar__separator {
+    width: 1px;
+    height: 50px;
+    background-color: #323732;
+
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .celestra-stats-bar__inner {
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .celestra-stats-bar__item {
+        flex: 0 0 45%;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .celestra-stats-bar__separator {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .celestra-stats-bar__item {
+        flex: 0 0 100%;
+    }
+}

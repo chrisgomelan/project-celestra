@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "celestra/offers-section",
+    "version": "1.0.0",
+    "title": "Celestra Offers",
+    "category": "theme",
+    "icon": "tag",
+    "description": "Grid of promotional offers with images, titles, and descriptions.",
+    "keywords": [
+        "offers",
+        "promotions",
+        "cards",
+        "celestra"
+    ],
+    "textdomain": "child-celestra",
+    "attributes": {
+        "heading": {
+            "type": "string",
+            "default": "Discover Your Offers"
+        },
+        "cards": {
+            "type": "array",
+            "default": [
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-offer-1.webp",
+                    "title": "Celestra Exclusive",
+                    "description": "Celebrate your loyalty with multiplied rewards.",
+                    "buttonText": "View Details",
+                    "buttonUrl": "#"
+                },
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-offer-2.webp",
+                    "title": "Starlit Holiday Retreat",
+                    "description": "A romantic festive escape for two, blending relaxation and seasonal charm.",
+                    "buttonText": "View Details",
+                    "buttonUrl": "#"
+                },
+                {
+                    "image": "/wp-content/uploads/2026/03/celestra-offer-3.webp",
+                    "title": "Member Privilege: Stay 4, Pay 3",
+                    "description": "Enjoy a complimentary night when you stay for four in our tranquil suites.",
+                    "buttonText": "View Details",
+                    "buttonUrl": "#"
+                }
+            ]
+        }
+    },
+    "supports": {
+        "html": false,
+        "align": [
+            "full"
+        ],
+        "spacing": {
+            "margin": true,
+            "padding": true
+        }
+    },
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}
